@@ -1,22 +1,16 @@
 import java.util.Scanner;
 
-public class FirstSmallest {
+public class PractiseProblems {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter first number: ");
-        int number1 = sc.nextInt();
+        System.out.print("Enter a number: ");
+        int number = sc.nextInt();
 
-        System.out.print("Enter second number: ");
-        int number2 = sc.nextInt();
-
-        System.out.print("Enter third number: ");
-        int number3 = sc.nextInt();
-
-        if (number1 < number2 && number1 < number3) {
-            System.out.println("Is the first number the smallest? Yes");
+        if (number % 5 == 0) {
+            System.out.println("Is the number " + number + " divisible by 5? Yes");
         } else {
-            System.out.println("Is the first number the smallest? No");
+            System.out.println("Is the number " + number + " divisible by 5? No");
         }
 
         sc.close();
